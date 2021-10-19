@@ -2,6 +2,7 @@ package com.guanwh.swdevdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.button).setOnClickListener(View.OnClickListener {
+            Log.d(R.layout.activity_main.toString(),"Click welcome button.")
             findViewById<TextView>(R.id.textView).setText("Welcome FDU:)")
         })
     }
