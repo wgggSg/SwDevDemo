@@ -1,5 +1,6 @@
 package com.guanwh.swdevdemo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button).setOnClickListener(View.OnClickListener {
             Log.d(R.layout.activity_main.toString(),"Click welcome button.")
             findViewById<TextView>(R.id.textView).setText("Welcome FDU:)")
+
+            val intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
         })
     }
 }

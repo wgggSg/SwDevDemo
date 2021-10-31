@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwDevDemo">
         <activity
+            android:name=".SearchActivity"
+            android:launchMode="standard"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:launchMode="standard"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
