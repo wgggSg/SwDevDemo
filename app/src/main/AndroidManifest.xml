@@ -10,13 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwDevDemo">
         <activity
+            android:name=".todolst.AddTodoActivity"
+            android:exported="false"
+            android:launchMode="standard" />
+        <activity
+            android:name=".todolst.TodoListActivity"
+            android:exported="false"
+            android:launchMode="standard" />
+        <activity
             android:name=".SearchActivity"
-            android:launchMode="standard"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="standard" />
         <activity
             android:name=".MainActivity"
-            android:launchMode="standard"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
